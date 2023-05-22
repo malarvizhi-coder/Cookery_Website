@@ -1,0 +1,389 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #C5D8A4 !important;
+    padding: 0 !important;
+}
+
+.navSectionOne,
+.navSectionTwo {
+    list-style: none;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+
+.navbar-brand {
+    padding: 0 0 0 30px !important;
+    font-family: 'Expletus Sans', cursive;
+    color: #285430 !important;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.navItems {
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    background-color: transparent;
+    color: #285430;
+    font-size: 1.1rem;
+}
+
+ul,
+li,
+button {
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    height: 60px;
+    width: 160px;
+    border-radius: 0px;
+}
+
+#carouselImg {
+    height: 600px;
+}
+
+.orderButton {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color, border-color, color, box-shadow, filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 17px 30px;
+    color: #E5D9B6;
+    background-color: #285430;
+    height: 48px;
+}
+
+.orderButton:hover {
+    transform: scale(1.04);
+    background-color: #BB9981;
+}
+
+.carousel-caption {
+    background-color: rgba(49, 54, 47, 0.5);
+    width: 600px;
+    align-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 30% !important;
+}
+
+.carouselHeading {
+    font-family: 'Poppins', sans-serif;
+    color: #E5D9B6;
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+
+.carouselDesc {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: #E5D9B6;
+}
+.subContainerWrap{
+    background-color: #F4FCD9;
+    text-align: center;
+    padding: 60px 0;
+}
+.subContainer {
+    display: grid;
+    grid-template-columns: 25% 39%;
+    justify-content:space-evenly;
+    padding: 10px 0;
+}
+
+.subHeading {
+    display: flex;
+    align-items: center;
+    font-family: 'Expletus Sans', cursive;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 85px;
+    text-align: center;
+    color: #285430;
+}
+@keyframes rotateText {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-5deg);
+    }
+  }
+  
+  .text-animation {
+    animation-name: rotateText;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+.subDescription{
+    font-family: 'Poppins', sans-serif;
+    color: #625953;
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.reservation{
+    margin-top:40px
+}
+.blogWrap{   
+    background-color: #C5D8A4;
+}
+.blogSection {
+    margin: auto;
+    width: 70%;
+    padding: 40px;
+}
+.blogSubHeading{
+    font-family: 'Expletus Sans', cursive;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    color: #285430;
+}
+.blogSubDescription{
+    font-size: 16px;
+    color:#625953;
+    font-weight: 400;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.gridContainer{
+    background-color: #C5D8A4;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20% 20% 20% 20%;
+    padding: 0 0 80px 0;
+}
+
+.card {
+    border-radius: 15px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .card1{
+    background-image: url(images/chicken.png);
+  }
+  .card2{
+    background-image: url(images/coconut.png);
+  }
+  .card3{
+    background-image: url(images/omblemte.png);
+  }
+  .card4{
+    background-image: url(images/potato.png);
+  }
+  
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card b {
+    position: absolute;
+    inset: 6px;
+    background: rgba(#285430 0.5);
+    z-index: 2;
+  }
+  
+  .card .content {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0);
+    transition: 0.8s;
+  }
+  
+  .card:hover .content {
+    transform: scale(1);
+    bottom: 110px;
+  }
+  
+  .content .title {
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1em;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .content .title span {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+.cuisineSection{
+    padding: 80px 0;
+    background-color: #F1DEC9;
+}
+.cuisineslider {
+    display: flex;
+    text-align: center;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    padding: 20px;
+    background-color: #F1DEC9;
+  }
+  
+.cuisineslide {
+    border-radius: 24px;
+    margin: 30px;
+    padding: 20px 0;
+    flex: 0 0 25%;
+    scroll-snap-align: center;
+    background-color: #F1DEC9;
+  }
+
+.sliderImg{
+    border-radius: 10px;
+    height:250px;
+    width:270px;
+  }
+.sliderWrap{
+    padding-top: 10px;
+}
+.dishName{
+    font-size: 18px;
+    color:#285430;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.dishCost{
+    font-size: 15px;
+    color:#625953;
+    font-weight: 400;
+}
+.thaliFoodSectionHolder{
+  background-color:#C5D8A4;
+  padding-top: 80px;
+}
+.thaliFoodSectionWrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.thaliFoodSection{
+  width:300px !important;
+  margin-top: 50px;
+  text-align: center;
+}
+.reviewSectionWrap{
+  padding: 80px 0;
+  background-color:#F1DEC9;
+}
+.customerReviewBox{
+  text-align: center;
+  width:800px;
+  padding: 40px;
+  background-color: #C5D8A4;
+}
+.starRating{
+  height: 30px;
+  width: 120px;
+}
+.customerReviewBox {
+  margin: auto;
+  line-height: 30px;
+  color:#393634;
+  border-radius: 75px 0px 75px 0px;
+  text-align: justify;
+  width: 800px;
+  font-size: 1.1rem;
+  padding: 80px;
+  background-color: #C5D8A4;
+}
+.footSectionWrap{
+  background-color: #C5D8A4;
+}
+.footerSection {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  text-align: center;
+  margin: auto;
+  padding: 60px;
+}
+hr{
+  border: 2px solid #285430;
+  margin: 0;
+  padding: 0;
+}
+.footerContactSection {
+  color:#E5D9B6;
+  padding: 20px 0;
+  background-color: #285430;
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  justify-content: space-evenly;
+  grid-column-gap: 100px;
+}
+.addressWrap, .mailSection{
+  display: flex;
+  padding-top: 10px;
+}
+.footerMenuWrap {
+  padding: 25px 0;
+  display: grid;
+  grid-gap:15px;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+}
+.footerLogos{
+  height: 30px;
+  width: 30px;
+  margin-right: 30px;
+}
+p.footerMenu {
+  color:#BB9981;
+}
